@@ -219,15 +219,17 @@ input[type="submit"]:hover {
     max-width: 1200px;
 }
 
-.fav-city  {
+.fav-city {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(33.33% - 20px); 
+    width: calc(30%);
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    margin: 10px auto; 
 }
+
 
 .fav-city:hover {
     transform: scale(1.05);
@@ -251,6 +253,7 @@ input[type="submit"]:hover {
 .remove-btn:hover, #add-favorite:hover {
     opacity: .7;
 }
+
 
 
 @media (max-width: 1200px) {
