@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Weather Website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">DS</div>
+                <button class="header_toggle" id="header-tog" onclick="toggleNav()">☰</button>
+                <nav class="header_nav" id="headerNav">
+                    <a href="index.html" class="header_link">Home</a>
+                    <a href="#form" class="header_link">Your City</a>
+                    <a href="#footer" class="header_link">Contacts</a>
+                </nav>
+            </div>
+            <div class="header_intro">
+                <div class="intro">
+                    <h1 id="form" class="intro_title">Weather forecasts for thousands of locations</h1>
+
+                    <form class="intro_search_form">
+                        <input type="text" id="text" name="text" placeholder="Search for a place..."> <br><br>
+                        <input type="submit" id="submitBtn" value="Search">
+                    </form>
+            
+                    <div class="weather-card" id="weatherCard" style="display: none;">
+                        <h2 id="cityName"></h2>
+                        <p id="temperature"></p>
+                        <p id="weatherDescription"></p>
+                        <p id="humidity"></p>
+                        <p id="windSpeed"></p>
+                        <div class="weather-info">
+                            <button id="add-favorite" class="add-favorite-btn">favorite</button>
+                        </div>                          
+                    </div>
+                    
+                </div>
+            </div>            
+        </div>
+    </header>
+
+
+
+
+     <section class="default-cities">
+        <div class="container">
+            <div class="default-cities-inner">
+                <div class="weather-card-d" id="tarazCard">
+                    <h2 id="city-name-taraz">Taraz</h2>
+                    <p id="Temp-taraz">Loading...</p>
+                    <p id="Weather-taraz">Loading...</p>
+                    <p id="Humidity-taraz">Loading...</p>
+                    <p id="Wind-taraz">Loading...</p>
+                </div>
+                <div class="weather-card-d" id="almatyCard">
+                    <h2 id="city-name-almaty">Almaty</h2>
+                    <p id="Temp-almaty">Loading...</p>
+                    <p id="Weather-almaty">Loading...</p>
+                    <p id="Humidity-almaty">Loading...</p>
+                    <p id="Wind-almaty">Loading...</p>
+                </div>
+                <div class="weather-card-d" id="astanaCard">
+                    <h2 id="city-name-astana">Astana</h2>
+                    <p id="Temp-astana">Loading...</p>
+                    <p id="Weather-astana">Loading...</p>
+                    <p id="Humidity-astana">Loading...</p>
+                    <p id="Wind-astana">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="location-weather">
+        <div class="container">
+            <h2>Your Location</h2>
+            <div id="locationWeather" >
+                <h4>Loading your location weather...</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="favorite">
+        <div class="container">
+            <div id="favorite-cities" class="favorite-cities">
+                <h2 id="fav-h">Favorite City</h2>
+                <div id="favorite-list"></div>
+            </div>
+        </div>
+    </div>
+      
+
+
+
+
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_content">
+                <p>© 2024 DS Weather. All rights reserved.</p>
+                <p>Contact us: dias.seisenbek@narxoz.kz</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
